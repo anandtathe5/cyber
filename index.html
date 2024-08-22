@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Incident Monitoring Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cyber Incident Monitoring Tool</h1>
+        <nav>
+            <ul>
+                <li><a href="#data-input">Data Input</a></li>
+                <li><a href="#incident-feed">Incident Feed</a></li>
+                <li><a href="#visualization">Visualization</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="data-input">
+        <h2>Data Input</h2>
+        <form id="data-form">
+            <input type="text" id="platform-url" placeholder="Enter platform URL" required>
+            <button type="submit">Fetch Data</button>
+        </form>
+        <p id="status-message"></p>
+    </section>
+
+    <section id="incident-feed">
+        <h2>Incident Feed</h2>
+        <div id="feed-container">
+            <!-- Dynamically populated with incident data -->
+        </div>
+    </section>
+
+    <section id="visualization">
+        <h2>Visualization</h2>
+        <div id="chart-container">
+            <!-- Visualization charts will be displayed here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cyber Security Initiative</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
